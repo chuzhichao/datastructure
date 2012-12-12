@@ -8,7 +8,8 @@ public class PrimeNum {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		boolean[] prime = new boolean[200];
+		final int PRIME_RANGE = 100;
+		boolean[] prime = new boolean[PRIME_RANGE];
 		findPrime(prime);
 		for(int i=0; i<prime.length; i++) {
 			if(prime[i])

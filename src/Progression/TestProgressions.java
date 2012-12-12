@@ -34,6 +34,12 @@ public class TestProgressions {
 		System.out.println("Print Fibonacci Progression values with start values (4, 6):");
 		FiboProgression f1 = new FiboProgression(4,6);
 		f1.printProgression(5);
+		
+		Progression p = new GeomProgression();
+		System.out.println(p.firstValue());
+		
+		p = (Progression) p;
+		System.out.println(p.firstValue());
 	}
 
 }

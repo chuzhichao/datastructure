@@ -20,9 +20,9 @@ public class Progression {
 	}
 	
 	//print the progression
-	public void printProgression(int n) {
+	public void printProgression(long n) {
 		System.out.print(firstValue());
-		for(int i = 2; i<=n; i++) {
+		for(long i = 2; i<=n; i++) {
 			System.out.print(" " +nextValue());
 		}
 		System.out.println("");

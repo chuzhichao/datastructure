@@ -15,9 +15,11 @@ public class TestProgressions {
 		System.out.println("Print Arithetic Progression values with default:");
 		ArithProgression a = new ArithProgression();
 		a.printProgression(5);
-		System.out.println("Print Arithetic Progression values with increment 2:");
-		ArithProgression a1 = new ArithProgression(2);
+		System.out.println("Print Arithetic Progression values with increment 128:");
+		ArithProgression a1 = new ArithProgression(128);
 		a1.printProgression(5);
+		ArithProgression a2 = new ArithProgression(128);
+		a2.catchError();
 		
 		System.out.println("Print Geometric Progression values with default:");
 		GeomProgression g = new GeomProgression();

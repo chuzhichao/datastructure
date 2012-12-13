@@ -28,14 +28,13 @@ public class PrimeNum {
 				continue;
 			int curNum = i+1;
 			int sqr = (int)Math.round(Math.sqrt(n));
-
 			for(int j = 2; j<sqr; j++) {
 				if(curNum%j==0&&curNum!=j) {
 					flag[i] = false;
-					for(int k =2; curNum*k<=n; k++) {
-						flag[curNum*k-1]=false;
-					}
 				}
+			}
+			for(int k =2; curNum*k<=n; k++) {
+				flag[curNum*k-1]=false;
 			}
 		}
 		return flag;
